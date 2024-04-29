@@ -25,5 +25,10 @@
 }
 
 .logo{
-    color:blue;
+    color:#ff7200;
+    float:left;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
 }
