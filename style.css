@@ -25,10 +25,62 @@
 }
 
 .logo{
-    color:#ff7200;
+    color:red;
     float:left;
     font-family: Arial;
     padding-left: 20px;
     float: left;
     padding-top: 10px;
 }
+
+.menu{
+    width: 400px;
+    float: right;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 25px;
+}
+
+ul li a{
+    text-decoration: none;
+    color:white;
+    font-family: Arial;
+    font-weight: bolder;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color:#ff7200;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
