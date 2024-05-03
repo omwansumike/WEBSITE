@@ -4,13 +4,13 @@
 
 }
 
-.main{
+/*.main{
     width: 100%;
     background:linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(cf44.jpg);
     background-position: center;
     background-size: cover;
     height: 109vh;
-}
+}*/
 
 .navbar{
     width: 1600px;
@@ -95,8 +95,8 @@ ul li a:hover{
     margin-top: 13px;
     color:#fff;
     font-size: 15px;
-    border-bottom-right-radius:5px;
-    border-bottom-right-radius:5px;
+    border-top-right-radius:5px;
+    border-top-right-radius:5px;
 }
 
 .btn:focus{
