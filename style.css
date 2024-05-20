@@ -6,10 +6,11 @@
 
 .main{
     width: 100%;
-    background:linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(BackgroundImage/jaguar.jpeg);
+    background:linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(cf44.jpg);
     background-position: center;
-    background-size: cover;
+    background-size:cover;
     height: 109vh;
+    background-image: url("jaguar.jpeg");
 }
 
 .navbar{
