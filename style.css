@@ -1,11 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 
-.body{
+.main{
     width: 100%;
-    background-image: url(../img/jangu);
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(tree.jpeg);
     background-position: center;
     background-size:cover;
     height: 109vh;
-   
+
+    
 }
 
 .navbar{
@@ -46,12 +51,12 @@ ul li{
     list-style: none;
     margin-left: 62px;
     margin-top: 27px;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 ul li a{
     text-decoration: none;
-    color:rgba(209, 93, 15, 0.689);
+    color: #fff;
     font-family: Arial;
     font-weight: bold;
     transition: 0.4s ease-in-out;
@@ -97,6 +102,7 @@ ul li a:hover{
 
 .btn:focus{
     outline: none;
+}
 
     .srch:focus{
         outline:none;
@@ -129,29 +135,41 @@ ul li a:hover{
     .content .cn{
         width: 160px;
         height: 40px;
-        background: #91ff00cf;
+        background: #ff7200;
         border: none;
         margin-bottom:10px ;
         margin-left: 20px;
         font-size: 18px;
         border-radius: 10px;
         cursor:pointer;
-        transform: .4s ease;
+        transition: .4s ease;
+       
 
     }
     
     .content .cn a{
         text-decoration: none;
         color:black;
-        transition:3s ease;
+        transition:  .3s ease;
 }
     
      .cn:hover{
         background-color: #fff;
-
-     }
 }
-
+    .content span{
+        color: #ff7200;
+        font-size: 60px;
+}
+    .form{
+        width: 25px;
+        height: 380px;
+        background:linear-gradient(to top , rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+        position: absolute;
+        top: -20px;
+        left: 870px;
+        border-radius: 10px;
+        padding: 25px;
+    }
 
 
 
