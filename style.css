@@ -192,6 +192,12 @@ ul li a:hover{
         border-right: none;
         border-left: none;
         color: #fff;
+        font-size: 15px;
+        letter-spacing: 1px;
+        margin-top: 30px;
+        font-family: sans-serif;
+        
+
     }
 
 
