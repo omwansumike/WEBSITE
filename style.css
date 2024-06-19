@@ -196,11 +196,16 @@ ul li a:hover{
         letter-spacing: 1px;
         margin-top: 30px;
         font-family: sans-serif;
-        
 
-    }
+   }
 
-
+   .form input:focus{
+    outline: none;
+   }
+::placeholder{
+    color:#fff;
+    font-family: Arial;
+}
 
 
 
