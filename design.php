@@ -7,11 +7,7 @@
     
 </head>
 <body>
-    <a href="index.html">HOME</a>
-    <a href="about.html">ABOUT</a>
-    <a href="services.html">SERVICES</a>
-    <a href="design.html">DESIGN</a>
-    <a href="contact.html">CONTACT</a>
+    <?php include_once ("templates/nav.php");?>
     
     <h1>This is the design page </h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio explicabo officiis corporis tenetur consectetur sint velit minima eos assumenda voluptatum, ducimus libero nisi vero inventore ipsam nam non totam asperiores?</p>
