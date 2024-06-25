@@ -13,11 +13,7 @@
         </div>
         <div class="menu">
             <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="services.html">SERVICES</a></li>
-                <li><a href="design.html">DESIGN</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+                <?php include_once ("templates/nav.php");?>
             </ul>
         </div>
     </div>
