@@ -8,11 +8,7 @@
 
 </head>
 <body>
-    <a href="index.html">HOME</a>
-    <a href="about.html">ABOUT</a>
-    <a href="services.html">SERVICES</a>
-    <a href="design.html">DESIGN</a>
-    <a href="contact.html">CONTACT</a>
+    <?php include_once ("templates/nav.php");?>
 
     <h1> This is the contact page </h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quidem vitae itaque officiis quo ipsam exercitationem suscipit odio, delectus cupiditate velit asperiores? Quas reprehenderit recusandae perferendis laudantium doloremque, magnam corrupti.</p>
