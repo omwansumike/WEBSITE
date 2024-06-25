@@ -8,17 +8,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<?php include_once ("templates/nav.php");?>
     <div class="navbar">
         <div class="icon">
             <h2 class="logo">DELOITE</h2>
         </div>
-        <div class="menu">
-                <a href="index.html">HOME</a>
-                <a href="about.html">ABOUT</a>
-                <a href="services.html">SERVICES</a>
-                <a href="design.html">DESIGN</a>
-                <a href="contact.html">CONTACT</a>
-        </div>
+       
     </div>
 
     <div class="content">
