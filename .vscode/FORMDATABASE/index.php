@@ -13,6 +13,7 @@
     <div class="navbar">
     <div class="icon">
         <h2 class="logo">DELOITE</h2>
+        <form action="connect.php" method="post">
     </div>
 
     
