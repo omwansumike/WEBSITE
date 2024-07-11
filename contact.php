@@ -11,6 +11,10 @@
     <?php include_once ("templates/nav.php");?>
 
     <h1> This is the contact page </h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quidem vitae itaque officiis quo ipsam exercitationem suscipit odio, delectus cupiditate velit asperiores? Quas reprehenderit recusandae perferendis laudantium doloremque, magnam corrupti.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Voluptas quidem vitae itaque officiis quo ipsam exercitationem 
+         suscipit odio, delectus cupiditate velit asperiores? 
+         Quas reprehenderit recusandae perferendis laudantium doloremque, 
+         magnam corrupti.</p>
 </body>
 </html>

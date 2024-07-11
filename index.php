@@ -6,6 +6,7 @@
 </head>
 
 <body>
+<?php require_once("Database/db_connect.php");?>
     <div class="main">
         <div class="navbar">
             <div class="icon">
