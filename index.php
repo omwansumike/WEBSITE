@@ -4,9 +4,26 @@
     <title>Webpage Design</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-<?php require_once("Database/db_connect.php");?>
+<?php 
+require_once("Database/db_connect.php");
+
+if(isset($_POST["submit"])) {
+    $username= $_POST["username"];
+    $password=$_POST["password"];
+    $stmt = $conn->prepare("INSERT INTO users (username, password) VALUES (?, ?)");
+    $stmt->bind_param("ss", $username, $password);
+
+    if ($stmt->execute() === TRUE) {
+        echo "New record created successfully";
+    } else {
+        echo "Error: " . $stmt->error;
+    }    
+    $stmt->close();
+}
+
+$conn->close();
+?>
     <div class="main">
         <div class="navbar">
             <div class="icon">
@@ -31,38 +48,10 @@
         <button class="cn"><a href="#">JOIN US</a></button>
         <div class="form">
             <h2>Login Here</h2>
-            <?php
-            if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                include 'connect.php';
-
-                $email = htmlspecialchars($_POST['email']);
-                $password = htmlspecialchars($_POST['password']);
-
-                // Use prepared statements for security
-                $stmt = $conn->prepare("SELECT * FROM users WHERE email = ?");
-                $stmt->bind_param("s", $email);
-                $stmt->execute();
-                $result = $stmt->get_result();
-
-                if ($result->num_rows > 0) {
-                    $row = $result->fetch_assoc();
-                    if (password_verify($password, $row['password'])) {
-                        echo "Login successful";
-                    } else {
-                        echo "Invalid password";
-                    }
-                } else {
-                    echo "No user found with this email";
-                }
-
-                $stmt->close();
-                $conn->close();
-            }
-            ?>
             <form method="post" action="index.php">
-                <input type="email" name="email" placeholder="Enter Email Here" required>
+                <input type="email" name="username" placeholder="Enter Email Here" required>
                 <input type="password" name="password" placeholder="Enter Password Here" required>
-                <button class="btn" type="submit">Login</button>
+                <button class="btn" type="submit" name="submit">Login</button>
             </form>
             <p class="link">Don't have an account<br>
                 <a href="#">Sign up here</a>
@@ -80,3 +69,4 @@
     <script src="http://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
 </html>
+
